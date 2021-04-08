@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//california 
+using TMPro;
 
 public class PopUpSystem : MonoBehaviour
 {
-    public GameObject popUpBox;
-    public Animator animator;
+    //dialogue 
+    public GameObject dialogueBox;
+    public Animator boxAnimator;
+    //pasadena 
     public TMP_Text popUpText;
 
     public void PopUp(string text)
     {
-        popUpBox.SetActive(true);
+        dialogueBox.SetActive(true);
         popUpText.text = text;
-        animator.SetTrigger("pop");
+        boxAnimator.SetTrigger("popUp");
     }
 }
