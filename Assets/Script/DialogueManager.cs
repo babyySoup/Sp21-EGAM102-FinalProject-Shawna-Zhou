@@ -5,11 +5,15 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    //UI stuff
+    //Refrencing Text Mesh Pro 
     public TMPro.TMP_Text nameText;
     public TMPro.TMP_Text dialogueBoxText;
-    
-    
+
+    public Animator animator; 
+
+
+
+
     //keep track of sentences 
     private Queue<string> sentences; 
      
@@ -23,6 +27,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartConversation (Dialogue dialogue)
     {
+        animator.SetBool("IsOpen", true);
+        
         nameText.text = dialogue.name;
 
         //clear earlier sentences
@@ -50,7 +56,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndConversation()
     {
-        Debug.Log("Nothing else to talk about...");
+        animator.SetBool("IsOpen", false);
     }
 
 }
