@@ -51,9 +51,21 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogueBoxText.text = sentence; 
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueBoxText.text = ""
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueBoxText.text += letter;
+            //wait frame
+            yield return null; 
+
+        }
+    }
     void EndConversation()
     {
         animator.SetBool("IsOpen", false);
