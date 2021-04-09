@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence)
     {
-        dialogueBoxText.text = ""
+        dialogueBoxText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueBoxText.text += letter;
