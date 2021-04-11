@@ -270,14 +270,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'ME: A club, my system says it is a place where human party $ have fun at.
-      What is your name, are you here to have fun?'
-    - '"Hey.. I''m ARi. I would not really describe this place as fun..."'
-    - '"It is crowded, but it does not make me feel less alone, '
-    - 'there are so many people, so many souls,  but I dont feel connected to any
-      of them." '
-    - '"All these music sounds like an awful noiese to me,'
-    - It screams and laugh at me about how lonely I am."
+    - 'ME: [A club, my system says it is a place where human party $ have fun at.
+      What is your name, are you here to have fun?]'
+    - '"Hey.. I''m ARi. I am actually just here to... um... visit a friend"'
+    - '"she used to dance at this club, she loved dancing."'
+    - '"then she left us, she left me, I wish to see her dance again."'
+    - '"I am sorry I talked so much, I got into the story... It is miserable to live
+      in a world without her." '
     name: ARi
 --- !u!1 &71028748
 GameObject:
@@ -2112,21 +2111,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1327072683
-MonoBehaviour:
+--- !u!58 &1327072683
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327072680}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01a2c95df2d6b343baf7e0b912ba159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences: []
-    name: ARI
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.012549492, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.0124999
 --- !u!1 &1737922182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,9 +2405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 'Seems like '
-    - just one
-    - idk i hate it here
+    - 'Scanner shows it is a pair of high heels, only the left one remain. '
+    - A nice pair of shoes, why it is abandoned on the alley ?
+    - Who does it belong to?
     name: '?'
 --- !u!114 &1981461808
 MonoBehaviour:
