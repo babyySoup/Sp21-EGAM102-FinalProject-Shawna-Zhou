@@ -1729,11 +1729,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scanning:
     dataSentences:
-    - 'SIGNAL Club: a popular nightclub located in downtown Z City. Famous for their
-      exotic dancers and ethanol.'
-    - Red High Heels (1) - last worn by a female resident of Z City, identity unknown.
-    - 
-    dataName: Raven Club Data
+    - "surrounding scan\n----------------------------------------\nSIGNAL Club: a
+      popular nightclub located in downtown Z City. SIGNAL Club is famous for their
+      exotic dancers and house special ethanols. \n\nClub hours: 9 P.M. - 5 A.M.
+      Thesday - Sunday\n----------------------------------------\n\nThe Signal bar
+      has a large amount of customers. \ndowntown Z city is a popular spot for many
+      types of humans. "
+    - "Item scan\n----------------------------------------\nRed High Heels (L) -
+      \"SIZE 6  Made in Z City\"\n\nDatabase image shows that it is last worn by
+      a female resident of Z City, \nid number #14Y87T69\nname: given name unknown,
+      referred as \"Aurora\"\n----------------------------------------\n\nThe surface
+      of the shoe is damaged with scratches.\nThe heel of the shoe is broken.\n"
+    - '++SCANNING SUMMARIZE++
+
+      ----------------------------------------
+
+      -
+      Highly suggested among young humans
+
+      - High crime rate location
+
+      -
+      1 broken left high heel shoe '
+    dataName: 'Downtown '
 --- !u!114 &1048056241
 MonoBehaviour:
   m_ObjectHideFlags: 0
