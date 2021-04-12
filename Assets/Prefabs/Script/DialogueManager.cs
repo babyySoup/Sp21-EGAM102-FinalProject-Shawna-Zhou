@@ -9,8 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TMPro.TMP_Text nameText;
     public TMPro.TMP_Text dialogueBoxText;
 
-    public Animator animator; 
-
+    public Animator animator;
 
 
 
