@@ -775,7 +775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementForce: 2000
-  JumpForce: 800
+  JumpForce: 1000
   PlayerAnimationController: {fileID: 320266634}
 --- !u!50 &320266640
 Rigidbody2D:
@@ -1299,7 +1299,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 8
   m_LinearDrag: 3
   m_AngularDrag: 3
   m_GravityScale: 20
