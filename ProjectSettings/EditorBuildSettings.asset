@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Prefabs/Scenes/City.unity
+    path: Assets/Scenes/City.unity
     guid: 8ec7fa55e568f044f8eb32f548dc3d4c
   - enabled: 1
     path: Assets/Prefabs/Scenes/Cliff.unity
     guid: 457cefb9382c98143b798312b874c5e5
   - enabled: 1
-    path: Assets/Prefabs/Scenes/PizzaShop.unity
+    path: Assets/Scenes/PizzaShop.unity
     guid: 31fc26e3a1bc16a4a934771af92abfca
   m_configObjects: {}

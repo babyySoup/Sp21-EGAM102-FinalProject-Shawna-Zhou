@@ -4,10 +4,26 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     public float MovementForce;
     public float JumpForce;
     public Animator PlayerAnimationController;
+    public List<string> InRangeObjects;
 
+    //dialogue triggers 
+    public DialogueTrigger ARiDialogue;
+    public DialogueTrigger HeelDialogue;
+    public DialogueTrigger TrashcanDialogue;
+    //PizzaScene triggers
+    public DialogueTrigger CatDialogue;
+    public DialogueTrigger PizzaDialogue;
+
+
+
+    void Start()
+    {
+        InRangeObjects = new List<string>();
+    }
 
     private void Update()
     {
@@ -59,12 +75,43 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Trigger");
-        TouchingObjects.Add(otherObject.name);
+        InRangeObjects.Add(collider.name);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D collider)
     {
-        Debug.Log("CollisionEnter");
+        InRangeObjects.Remove(collider.name);
     }
 
+
+    public void decideDialogue()
+    {
+        if (InRangeObjects.Contains("ARi"))
+        {
+            ARiDialogue.TriggerDialogue();
+        }
+        else if (InRangeObjects.Contains("Cat"))
+        {
+            CatDialogue.TriggerDialogue();
+        }
+
+
+
+    }
+    
+    public void decideExamine()
+    {
+        if (InRangeObjects.Contains("Heel"))
+        {
+            HeelDialogue.TriggerDialogue();
+        }
+        else if (InRangeObjects.Contains("Trashcan"))
+        {
+            TrashcanDialogue.TriggerDialogue();
+        }
+        else if (InRangeObjects.Contains("Pizza"))
+        {
+            PizzaDialogue.TriggerDialogue();
+        }
+    }
 }
