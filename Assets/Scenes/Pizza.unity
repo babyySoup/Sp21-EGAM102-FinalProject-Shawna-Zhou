@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementForce: 2000
-  JumpForce: 1000
+  JumpForce: 1200
   PlayerAnimationController: {fileID: 320266634}
   InRangeObjects: []
   ARiDialogue: {fileID: 0}
