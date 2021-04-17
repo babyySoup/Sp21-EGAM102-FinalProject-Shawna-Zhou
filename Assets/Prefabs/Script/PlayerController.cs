@@ -55,4 +55,16 @@ public class PlayerController : MonoBehaviour
             thisrigidbody2D.AddForce(MovementForce * Vector3.left, ForceMode2D.Force);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("Trigger");
+        TouchingObjects.Add(otherObject.name);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("CollisionEnter");
+    }
+
 }

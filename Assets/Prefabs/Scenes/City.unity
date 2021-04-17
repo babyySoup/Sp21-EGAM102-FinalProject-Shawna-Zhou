@@ -2200,6 +2200,7 @@ Transform:
   - {fileID: 1256062454}
   - {fileID: 828079508}
   - {fileID: 220457518}
+  - {fileID: 1327072682}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2351,7 +2352,7 @@ GameObject:
   - component: {fileID: 1256062457}
   - component: {fileID: 1256062456}
   m_Layer: 0
-  m_Name: heels
+  m_Name: Heel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2892,12 +2893,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327072680}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -177.45, y: -313.3, z: 466.94}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40.612045, y: -208.05495, z: 229.65497}
   m_LocalScale: {x: 79.08783, y: 82.05363, z: 79.08783}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1138828354}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1327072683
 CircleCollider2D:
@@ -2912,9 +2913,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.012549492, y: 0}
+  m_Offset: {x: -0.07899404, y: 0}
   serializedVersion: 2
-  m_Radius: 1.0124999
+  m_Radius: 1.2329888
 --- !u!1 &1367813917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3112,7 +3113,7 @@ RectTransform:
   - {fileID: 1724733439}
   - {fileID: 1048056239}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4238,7 +4239,7 @@ RectTransform:
   - {fileID: 9242352}
   - {fileID: 1981461806}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
