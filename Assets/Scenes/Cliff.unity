@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 9242355}
   - component: {fileID: 9242354}
   - component: {fileID: 9242353}
-  - component: {fileID: 9242356}
   m_Layer: 5
   m_Name: TALK
   m_TagString: Untagged
@@ -206,9 +205,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9242356}
-        m_TargetAssemblyTypeName: Trigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 320266638}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: decideDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -256,28 +255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9242351}
   m_CullTransparentMesh: 0
---- !u!114 &9242356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9242351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01a2c95df2d6b343baf7e0b912ba159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'ME: [A club, my system says it is a place where human party $ have fun at.
-      What is your name, are you here to have fun?]'
-    - '"Hey.. I''m ARi. I am actually just here to... um... visit a friend"'
-    - '"she used to dance at this club, she loved dancing."'
-    - '"then she left us, she left me, I wish to see her dance again."'
-    - '"I am sorry I talked so much, I got into the story... It is miserable to live
-      in a world without her." '
-    name: ARi
 --- !u!1 &22265963
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +464,8 @@ GameObject:
   - component: {fileID: 214756370}
   - component: {fileID: 214756371}
   - component: {fileID: 214756372}
+  - component: {fileID: 214756373}
+  - component: {fileID: 214756374}
   m_Layer: 0
   m_Name: Jazmine
   m_TagString: Untagged
@@ -578,6 +557,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &214756373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214756369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01a2c95df2d6b343baf7e0b912ba159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'I just wanna be alone... '
+    name: Jazmine #0823
+--- !u!61 &214756374
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214756369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.30886126, y: -0.34709752}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.2, y: 4.6}
+    newSize: {x: 4.2, y: 4.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.8177223, y: 5.294195}
+  m_EdgeRadius: 0
 --- !u!1 &298323351
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,8 +683,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -728,7 +749,7 @@ GameObject:
   - component: {fileID: 320266637}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -812,7 +833,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320266633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64, y: -293, z: 466.94}
+  m_LocalPosition: {x: -675, y: -288.1, z: 466.94}
   m_LocalScale: {x: 104.8443, y: 104.8443, z: 104.8443}
   m_Children: []
   m_Father: {fileID: 0}
@@ -883,6 +904,9 @@ MonoBehaviour:
   ARiDialogue: {fileID: 0}
   HeelDialogue: {fileID: 0}
   TrashcanDialogue: {fileID: 0}
+  ZachDialogue: {fileID: 736313722}
+  JazDialogue: {fileID: 214756373}
+  StreetLightDialogue: {fileID: 1496235947}
   CatDialogue: {fileID: 0}
   PizzaDialogue: {fileID: 0}
 --- !u!50 &320266640
@@ -990,8 +1014,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1125,7 +1149,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b961d4b330eda04c964835703eeb119, type: 3}
-  m_Color: {r: 0.1859134, g: 0.17706478, b: 0.21698111, a: 1}
+  m_Color: {r: 0.19179244, g: 0.18845674, b: 0.3301887, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1254,12 +1278,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f9b8fdef1d3968546876fc91dd2dbadb, type: 3}
-  m_Color: {r: 1, g: 0.69651955, b: 0.4575472, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a5110a8523123c044b3de31cb150af0c, type: 3}
+  m_Color: {r: 1, g: 0.89735436, b: 0.8160377, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.5, y: 7.2}
+  m_Size: {x: 6.4, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1273,8 +1297,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736313718}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 308, y: -69.45026, z: 832.57184}
-  m_LocalScale: {x: 19.914545, y: 19.914545, z: 19.914545}
+  m_LocalPosition: {x: 3, y: -64.7, z: 832.57184}
+  m_LocalScale: {x: 21.714315, y: 19.749678, z: 19.914545}
   m_Children: []
   m_Father: {fileID: 827849700}
   m_RootOrder: 0
@@ -1292,18 +1316,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000019073486, y: 0}
+  m_Offset: {x: -0.2721238, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.5, y: 7.2}
-    newSize: {x: 5.5, y: 7.2}
+    oldSize: {x: 6.4, y: 8}
+    newSize: {x: 6.4, y: 8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.930847, y: 7.2}
+  m_Size: {x: 10.747214, y: 7.2}
   m_EdgeRadius: 0
 --- !u!114 &736313722
 MonoBehaviour:
@@ -1319,12 +1343,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     sentences:
-    - 
-    - 
-    - 
-    - 
-    - 
-    name: 
+    - 'Miss, I am sorry, I did not hear what you said. I was thinking of something... '
+    - This might sound strange but have you ever felt a way for a person.. like that
+      person means the world to you... and you just don't know how to go on without
+      her?
+    - "My fianc\xE9e has gone missing for a while now, but the police does not seem
+      to find a clue about what's happening. "
+    - 'She went to work one day and just disappeared like that... I ... I do not
+      even know what I am talking about now. I miss her, I miss her to death, I know
+      that. '
+    - Isn't it crazy, we just got engaged last month too, we did not even get to
+      fnish planning the wedding. Is it even worth it to live?
+    name: Zachary #0001
 --- !u!1 &811551410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1400,6 +1430,7 @@ Transform:
   m_Children:
   - {fileID: 736313720}
   - {fileID: 214756370}
+  - {fileID: 1496235944}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1960,8 +1991,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2039,6 +2070,7 @@ Transform:
   m_Children:
   - {fileID: 2009030162}
   - {fileID: 860547458}
+  - {fileID: 2115568495}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2076,7 +2108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07160669, y: 0.2377152}
   m_AnchorMax: {x: 0.9274077, y: 0.7425697}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -22.882324, y: -108}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207009631
@@ -2126,8 +2158,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 120
+  m_fontSize: 160
+  m_fontSizeBase: 160
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2496,8 +2528,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2546,6 +2578,132 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438509283}
   m_CullTransparentMesh: 0
+--- !u!1 &1496235943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496235944}
+  - component: {fileID: 1496235946}
+  - component: {fileID: 1496235945}
+  - component: {fileID: 1496235947}
+  m_Layer: 0
+  m_Name: Streetlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496235944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496235943}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -410.11795, y: -7.4502563, z: 832.57184}
+  m_LocalScale: {x: 147.08932, y: 147.08932, z: 147.08932}
+  m_Children: []
+  m_Father: {fileID: 827849700}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1496235945
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496235943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 2}
+    newSize: {x: 1.5, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2}
+  m_EdgeRadius: 0
+--- !u!212 &1496235946
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496235943}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a02bda59c2b8c7345b01c6852d9db6ca, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1496235947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496235943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01a2c95df2d6b343baf7e0b912ba159, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - 'pretty old, it is not working due to the lack of maintenance. '
+    name: street light
 --- !u!1 &1724733438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,7 +3025,6 @@ GameObject:
   - component: {fileID: 1981461810}
   - component: {fileID: 1981461809}
   - component: {fileID: 1981461808}
-  - component: {fileID: 1981461807}
   m_Layer: 5
   m_Name: EXAMINE
   m_TagString: Untagged
@@ -2895,24 +3052,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1981461807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1981461805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b01a2c95df2d6b343baf7e0b912ba159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    sentences:
-    - 'Scanner shows it is a pair of high heels, only the left one remain. '
-    - A nice pair of shoes, why it is abandoned on the alley ?
-    - Who does it belong to?
-    name: '?'
 --- !u!114 &1981461808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2956,9 +3095,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1981461807}
-        m_TargetAssemblyTypeName: Trigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 320266638}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: decideExamine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3032,8 +3171,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983209062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.169, y: -0.561, z: 16.196234}
-  m_LocalScale: {x: 0.3822135, y: 0.12890987, z: 1}
+  m_LocalPosition: {x: -0.522, y: -0.578, z: 16.196234}
+  m_LocalScale: {x: 0.32594147, y: 0.07716602, z: 1}
   m_Children: []
   m_Father: {fileID: 860547458}
   m_RootOrder: 1
@@ -3105,7 +3244,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b961d4b330eda04c964835703eeb119, type: 3}
-  m_Color: {r: 0.4056604, g: 0.38818383, b: 0.373131, a: 1}
+  m_Color: {r: 0.5047876, g: 0.4750801, b: 0.6415094, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3511,12 +3650,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115568493}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 170, y: -130, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 388.06204, y: -24.75496, z: -237.28503}
   m_LocalScale: {x: 129.43939, y: 129.88391, z: 128.1133}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1138828354}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2115568496
 BoxCollider2D:

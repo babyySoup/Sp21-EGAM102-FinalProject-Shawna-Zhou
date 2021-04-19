@@ -14,6 +14,12 @@ public class PlayerController : MonoBehaviour
     public DialogueTrigger ARiDialogue;
     public DialogueTrigger HeelDialogue;
     public DialogueTrigger TrashcanDialogue;
+
+    //Cliff triggers
+    public DialogueTrigger ZachDialogue;
+    public DialogueTrigger JazDialogue;
+    public DialogueTrigger StreetLightDialogue;
+
     //PizzaScene triggers
     public DialogueTrigger CatDialogue;
     public DialogueTrigger PizzaDialogue;
@@ -94,10 +100,16 @@ public class PlayerController : MonoBehaviour
         {
             CatDialogue.TriggerDialogue();
         }
-
-
-
+        else if (InRangeObjects.Contains("Zachary"))
+        {
+            ZachDialogue.TriggerDialogue();
+        }
+        else if (InRangeObjects.Contains("Jazmine"))
+        {
+            JazDialogue.TriggerDialogue();
+        }
     }
+
     
     public void decideExamine()
     {
@@ -112,6 +124,10 @@ public class PlayerController : MonoBehaviour
         else if (InRangeObjects.Contains("Pizza"))
         {
             PizzaDialogue.TriggerDialogue();
+        }
+        else if (InRangeObjects.Contains("Streetlight"))
+        {
+            StreetLightDialogue.TriggerDialogue();
         }
     }
 }

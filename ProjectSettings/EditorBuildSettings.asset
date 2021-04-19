@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/City.unity
+    path: Assets/Scenes/Club.unity
     guid: 8ec7fa55e568f044f8eb32f548dc3d4c
   - enabled: 1
-    path: Assets/Prefabs/Scenes/Cliff.unity
-    guid: 457cefb9382c98143b798312b874c5e5
+    path: Assets/Scenes/Pizza.unity
+    guid: 34263379a1718b34c94160cfa83f50f2
   - enabled: 1
-    path: Assets/Scenes/PizzaShop.unity
-    guid: 31fc26e3a1bc16a4a934771af92abfca
+    path: Assets/Scenes/Cliff.unity
+    guid: 5a8a065023ce0514e9943fe4d4099a15
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
