@@ -687,6 +687,8 @@ MonoBehaviour:
   StreetLightDialogue: {fileID: 0}
   CatDialogue: {fileID: 0}
   PizzaDialogue: {fileID: 0}
+  FlowerfieldDialogue: {fileID: 0}
+  WitchDialogue: {fileID: 0}
 --- !u!50 &320266640
 Rigidbody2D:
   serializedVersion: 4
@@ -2857,8 +2859,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009030160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2, y: -33, z: 229.65497}
-  m_LocalScale: {x: 113.421875, y: 101.742874, z: 109.90108}
+  m_LocalPosition: {x: 33.7, y: -18.6, z: 229.65497}
+  m_LocalScale: {x: 119.35258, y: 107.0629, z: 115.64768}
   m_Children: []
   m_Father: {fileID: 1138828354}
   m_RootOrder: 0

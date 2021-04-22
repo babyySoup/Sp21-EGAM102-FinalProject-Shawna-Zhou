@@ -539,7 +539,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.2777443, y: -0.17215204}
@@ -638,9 +638,9 @@ MonoBehaviour:
       souls of the humans.
     - ' I often hear their last words before their soul perish, I got one here, you
       wanna hear it?'
-    - 'Aurora: "STOP! NO! Someone help....! please! '
-    - 
-    - 
+    - 'Aurora: "STOP! NO! Someone help....! please! i was just getting outta work!!!!"'
+    - oof, souds like this is a rough one...
+    - Aurora, whoever you are, I hope you rest well.
     name: Witch
 --- !u!1 &320266633
 GameObject:
@@ -911,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 1359799232039588444, guid: 141caa275ebfcb74081c3d2dec8af64e,
         type: 3}
       propertyPath: SceneName
-      value: Pizza
+      value: Start
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 141caa275ebfcb74081c3d2dec8af64e, type: 3}
