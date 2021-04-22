@@ -777,6 +777,8 @@ MonoBehaviour:
   StreetLightDialogue: {fileID: 1496235947}
   CatDialogue: {fileID: 0}
   PizzaDialogue: {fileID: 0}
+  FlowerfieldDialogue: {fileID: 0}
+  WitchDialogue: {fileID: 0}
 --- !u!50 &320266640
 Rigidbody2D:
   serializedVersion: 4
