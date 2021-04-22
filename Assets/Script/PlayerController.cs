@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     public DialogueTrigger CatDialogue;
     public DialogueTrigger PizzaDialogue;
 
+    //HillScene triggers
+    public DialogueTrigger FlowerfieldDialogue;
+    public DialogueTrigger WitchDialogue;
 
 
     void Start()
@@ -128,6 +131,10 @@ public class PlayerController : MonoBehaviour
         else if (InRangeObjects.Contains("Streetlight"))
         {
             StreetLightDialogue.TriggerDialogue();
+        }
+        else if (InRangeObjects.Contains("flowerfield"))
+        {
+            FlowerfieldDialogue.TriggerDialogue();
         }
     }
 }
