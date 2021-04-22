@@ -1411,6 +1411,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1359799232039588444, guid: 141caa275ebfcb74081c3d2dec8af64e,
+        type: 3}
+      propertyPath: SceneName
+      value: Hill
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 141caa275ebfcb74081c3d2dec8af64e, type: 3}
 --- !u!1 &977614045
